@@ -165,13 +165,13 @@
     <div class="container">
         <img src="img/LOGO_rm.png" width="100" height="100" left="80px"  top="20px"/> 
         <h2>Proman</h2>
-        <form action="">
+        <form action="login" method="post">
 
             <div class="form-item">
                 <span class="material-icons-outlined">
                     account_circle
                     </span>
-                <input type="text" name="text" id="text" placeholder="username or email">
+                <input type="text" name="text" id="text" placeholder="username">
             </div>
 
             <div class="form-item">

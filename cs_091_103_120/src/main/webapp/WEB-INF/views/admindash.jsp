@@ -19,7 +19,7 @@
     </div>
       <ul class="nav-links">
         <li>
-          <a href="#" class="active">
+          <a href="/cs_091_103_120/adminadduser" class="active">
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Add User</span>
           </a>
@@ -83,7 +83,7 @@
      
       <div class="profile-details">
         <!--<img src="images/profile.jpg" alt="">-->
-        <span class="admin_name">NAME</span>
+        <span class="admin_name"><%= request.getAttribute("user") %></span>
         <i class='bx bx-chevron-down' ></i>
       </div>
     </nav>
