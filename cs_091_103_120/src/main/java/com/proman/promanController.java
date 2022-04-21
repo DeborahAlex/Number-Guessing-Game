@@ -49,11 +49,11 @@ public class promanController {
 		return "admin_adduser";
 	}
 	@RequestMapping(value="/createuser",method=RequestMethod.POST)
-	public ModelAndView InsertUser(@RequestParam String text, @RequestParam String pass, @RequestParam String type)
+	public ModelAndView InsertUser(@RequestParam String username, @RequestParam String password, @RequestParam String type)
 	{
 		ModelAndView mv = new ModelAndView();
-		loginDao.InsertUser(text,pass,type);
-		mv.addObject("user", text);
+		loginDao.InsertUser(username,password,type);
+		mv.addObject("user", username);
 		mv.setViewName("admindash");
 		return mv;
 	}
